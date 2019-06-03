@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Visualizing Baltimore Murals</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom fonts for this template -->
+    <link href="all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="grayscale.min.css" rel="stylesheet">
+    <style>.skyline {
+      max-width: 100%;
+      }</style>
+  </head>
+
+  <body id="page-top" >
+
+<div class = 'logo'>
+<!--   all your other divs part of the web content (images,text,etc) -->
+<h1 class="ml16"><br><br>Charm City Murals</h1>
+<h1 class="ml15">A Baltimore Mural Visualization Project</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  </div>
+
+<div id="particles-js" ></div>
+<div id="particles-js2"></div><script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="smooth-parallax.min.js"></script>
+<script type="text/javascript">
+  window.addEventListener("load", function () {
+    SmoothParallax.init();
+  });
+</script>
+
+<img class="skyline" src="banv1.png" smooth-parallax start-position-y="-0.5"smooth-parallax end-position-y="-0.5">
+<img class="skyline" src="banv3.png" smooth-parallax start-position-y="-0.5"smooth-parallax end-position-y="-0.55">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tech">Technical Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#map">Map View</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#camera">Camera View</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Impact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<section id="tech" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+		  <h2 class="text-white mb-4">Abstract</h2>
+		  <p class="text-white-50">How do you train a machine learning model with only one image?</p>
+		  <p class="text-white-50">Our project successfully implements a vision recognition system using Augmentor and a Convolutional Neural Network</p>
+		  
+            <h2 class="text-white mb-4">Technical Stack</h2>
+            <p class="text-white-50">- Frontend: HTML, CSS, Bootstrap</p>
+			<p class="text-white-50">- Backend: Flask, Python, Open CV, Google Cloud Platform</p>
+            <p class="text-white-50">- Uses object detection and bounding box code for mural image detection with the power of OpenCV.</p>
+            <p class="text-white-50">- Implements <a href="https://arxiv.org/abs/1708.04680">Augmentor</a> to help supplement our sparse data set.</p>
+            <p class="text-white-50">- Utilized <a href="https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf">transfer learning</a> from <a href="https://github.com/nitroventures/tensorflow-art">TensorFlow Art</a> as an artwork classifier.</p>
+            <p class="text-white-50">- Wrote custom network for mural categorization. We built our model with NumPy and Tensorflow. In particular, we implemented a dual encoder convolutional neural network for unsupervised feature comparision. This essentially builds a "mural vector space" allowing the model, allowing for any murals to be quickly lookup and compared.</p>
+            <p class="text-white-50">- Used <a href="http://tensorboard.charmcitymurals.com/">Tensorboard</a> for training validation and great visualizations.</p>
+        
+
+            <p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR28Gz5QmdxI2th6Nw1nnsugD8j_gBGBCnhlR32zynYbQQu5I7IVpRMjDcK4cc7luQsVtl_lFHCyBhF/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" style="max-width:100%"allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="grayscale.min.js"></script>
+
+  </body>
+
+</html>
